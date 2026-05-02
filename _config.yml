@@ -2,4 +2,4 @@ theme: jekyll-theme-minimal
 title: NurFatin Aina Rizal's Portfolio💕
 description: Hello! Welcome to my portfolio! Hope you guys enjoy it!
 sass:
-  style: compressed
+  style: style.scss
