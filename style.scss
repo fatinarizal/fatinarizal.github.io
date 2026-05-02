@@ -1,20 +1,50 @@
+// =========================
+// 🎨 VARIABLES
+// =========================
+$primary: #7c3aed;
+$secondary: #c084fc;
+$accent: #a78bfa;
+$bg-light: #f5f3ff;
+$text-dark: #2e1065;
+
+$glass: rgba(255, 255, 255, 0.7);
+
+// =========================
+// 🌐 GLOBAL
+// =========================
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(135deg, #f5f3ff, #ede9fe, #faf5ff);
-  color: #2e1065;
+  color: $text-dark;
   margin: 0;
 }
 
-/* HERO */
+// =========================
+// 🚀 HERO SECTION
+// =========================
 .hero {
   text-align: center;
   padding: 90px 20px;
   background: linear-gradient(135deg, #ddd6fe, #ede9fe);
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  box-shadow: 0 10px 30px rgba(147, 51, 234, 0.15);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.15);
+
+  h1 {
+    font-size: 44px;
+    color: darken($primary, 10%);
+    margin: 10px 0;
+  }
+
+  h2 {
+    color: $primary;
+    font-weight: 500;
+  }
 }
 
+// =========================
+// 👤 PROFILE IMAGE
+// =========================
 .profile-pic {
   width: 130px;
   height: 130px;
@@ -25,20 +55,11 @@ body {
   margin-bottom: 15px;
 }
 
-.hero h1 {
-  font-size: 44px;
-  color: #5b21b6;
-  margin: 10px 0;
-}
-
-.hero h2 {
-  color: #7c3aed;
-  font-weight: 500;
-}
-
-/* BUTTON */
+// =========================
+// 🔘 BUTTON
+// =========================
 .btn {
-  background: linear-gradient(45deg, #a78bfa, #c084fc);
+  background: linear-gradient(45deg, $accent, $secondary);
   padding: 12px 28px;
   border-radius: 30px;
   color: white;
@@ -48,21 +69,16 @@ body {
   font-weight: 500;
   box-shadow: 0 10px 20px rgba(168, 85, 247, 0.25);
   transition: 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(168, 85, 247, 0.35);
+  }
 }
 
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 25px rgba(168, 85, 247, 0.35);
-}
-
-/* SECTION */
-h2 {
-  text-align: center;
-  margin-top: 50px;
-  color: #6d28d9;
-}
-
-/* PROJECT GRID */
+// =========================
+// 📦 PROJECT GRID
+// =========================
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -70,29 +86,44 @@ h2 {
   padding: 30px;
 }
 
-/* CARD */
+// =========================
+// 🧊 CARD DESIGN
+// =========================
 .card {
-  background: rgba(255, 255, 255, 0.7);
+  background: $glass;
   backdrop-filter: blur(12px);
   padding: 20px;
   border-radius: 18px;
   border: 1px solid rgba(168, 85, 247, 0.2);
   box-shadow: 0 10px 25px rgba(139, 92, 246, 0.1);
   transition: 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(139, 92, 246, 0.2);
+  }
+
+  h3 {
+    color: $primary;
+  }
+
+  p {
+    color: lighten($text-dark, 10%);
+  }
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 18px 35px rgba(139, 92, 246, 0.2);
-}
-
+// =========================
+// 🖼 PROJECT IMAGE
+// =========================
 .project-img {
   width: 100%;
   border-radius: 12px;
   margin-bottom: 10px;
 }
 
-/* SKILLS */
+// =========================
+// 📊 SKILLS
+// =========================
 .skills {
   display: grid;
   gap: 15px;
@@ -103,19 +134,21 @@ h2 {
   background: #ede9fe;
   border-radius: 10px;
   overflow: hidden;
+
+  div {
+    height: 10px;
+    background: linear-gradient(90deg, $secondary, $accent);
+  }
 }
 
-.bar div {
-  height: 10px;
-  background: linear-gradient(90deg, #c084fc, #a78bfa);
-}
-
-/* LINKS */
+// =========================
+// 🔗 LINKS
+// =========================
 a {
-  color: #7c3aed;
-  text-decoration: none;
-}
+  color: $primary;
+  transition: 0.2s ease;
 
-a:hover {
-  text-decoration: underline;
+  &:hover {
+    color: darken($primary, 10%);
+  }
 }
