@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: style.scss
 ---
 
 <div class="hero">
