@@ -1,0 +1,52 @@
+---
+---
+
+/* 💜 LIGHT PURPLE THEME */
+
+$primary: #7c3aed;
+$secondary: #c084fc;
+$accent: #a78bfa;
+$text-dark: #2e1065;
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f5f3ff, #ede9fe, #faf5ff);
+  color: $text-dark;
+  margin: 0;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #ddd6fe, #ede9fe);
+}
+
+.hero h1 {
+  color: $primary;
+}
+
+/* PROFILE */
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #c4b5fd;
+}
+
+/* BUTTON */
+.btn {
+  background: linear-gradient(45deg, $accent, $secondary);
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+/* PROJECT */
+.card {
+  background: rgba(255,255,255,0.7);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
