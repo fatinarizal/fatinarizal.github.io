@@ -7,7 +7,7 @@ title: Portfolio
   <img src="assets/images/profile.jpg" class="profile-pic"/>
   <h1>Hi, I'm NurFatin Aina Rizal 👋</h1>
   <h2 id="typing"></h2>
-  <a href="https://www.linkedin.com/in/nurfatinainarizal/" class="btn">Hire Me</a>
+  <a href="https://www.linkedin.com/in/nurfatinainarizal" class="btn">Hire Me</a>
 </div>
 
 <section>
