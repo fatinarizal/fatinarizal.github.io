@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="hero">
-  <h1>Hi, I'm NurFatin Aina 👋</h1>
+  <h1>Hi, I'm NurFatin Aina Rizal👋</h1>
   <h2><span id="typing"></span></h2>
   <a href="https://linkedin.com/in/nurfatin-aina-rizal-65636b26a" class="btn">Hire Me</a>
 </div>
