@@ -1,52 +1,129 @@
 ---
 ---
 
-/* 💜 LIGHT PURPLE THEME */
+/* ======================
+   🎨 DESIGN SYSTEM
+====================== */
+$bg: #f8f7ff;
+$card: rgba(255, 255, 255, 0.7);
+$primary: #6d28d9;
+$accent: #a855f7;
+$text: #1e1b4b;
 
-$primary: #7c3aed;
-$secondary: #c084fc;
-$accent: #a78bfa;
-$text-dark: #2e1065;
-
+/* ======================
+   GLOBAL
+====================== */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #f5f3ff, #ede9fe, #faf5ff);
-  color: $text-dark;
   margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: $bg;
+  color: $text;
+  scroll-behavior: smooth;
 }
 
-/* HERO */
+/* ======================
+   HERO (PRO STYLE)
+====================== */
 .hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 90px 20px;
-  background: linear-gradient(135deg, #ddd6fe, #ede9fe);
+  background: radial-gradient(circle at top, #ede9fe, #f8f7ff);
+
+  h1 {
+    font-size: 3rem;
+    color: $primary;
+    margin: 10px 0;
+  }
+
+  h2 {
+    color: $accent;
+    font-weight: 400;
+  }
 }
 
-.hero h1 {
-  color: $primary;
-}
-
-/* PROFILE */
 .profile-pic {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  border: 4px solid #c4b5fd;
+  border: 4px solid #ddd6fe;
+  box-shadow: 0 10px 30px rgba(109, 40, 217, 0.2);
 }
 
-/* BUTTON */
+/* ======================
+   BUTTON
+====================== */
 .btn {
-  background: linear-gradient(45deg, $accent, $secondary);
-  padding: 12px 25px;
+  margin-top: 20px;
+  padding: 12px 28px;
   border-radius: 30px;
+  background: linear-gradient(45deg, $primary, $accent);
   color: white;
   text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
 }
 
-/* PROJECT */
-.card {
-  background: rgba(255,255,255,0.7);
-  padding: 20px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
+/* ======================
+   SECTIONS
+====================== */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
 }
+
+/* ======================
+   PROJECTS (PRO GRID)
+====================== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: $card;
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+
+  h3 {
+    color: $primary;
+  }
+}
+
+/* ======================
+   SKILLS BAR
+====================== */
+.skill {
+  margin-bottom: 12px;
+
+  .bar {
+    height: 10px;
+    background: #e9d5ff;
+    border-radius: 10px;
+    overflow: hidden;
+
+    div {
+      height: 100%;
+      background: linear-gradient(90deg, $primary, $accent);
+    }
+  }
+}
+
+/* ======================
+   NAV (optional later)
+====================== */
