@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Portfolio
+title: NurFatin Aina Rizal's Portfolio😁
 ---
 
 <div class="hero">
