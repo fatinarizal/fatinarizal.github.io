@@ -1,6 +1,3 @@
----
-//layout: default
----
 
 <div class="hero">
   <img src="assets/images/profile.jpg" class="profile-pic"/>
