@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NurFatin Aina Rizal | Portfolio 😁</title>
+  <meta name="description" content="Hello! Welcome to my portfolio! Graduate Software Engineer specializing in React, Firebase, PHP, and SQL. Hope you guys enjoy it! 🙌">
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Background Glows -->
+  <div class="glow-bg glow-1"></div>
+  <div class="glow-bg glow-2"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span>Fatin</span>.dev
+      </a>
+      
+      <!-- Desktop Nav -->
+      <nav class="nav-links">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#volunteer" class="nav-link">Activities</a>
+        <a href="#contact" class="nav-link btn-nav">Contact</a>
+      </nav>
+
+      <!-- Theme & Mobile Actions -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="icon-moon"></i>
+          <i data-lucide="sun" class="icon-sun"></i>
+        </button>
+        
+        <button id="mobile-menu-toggle" class="mobile-btn" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="icon-open"></i>
+          <i data-lucide="x" class="icon-close"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav">
+    <nav class="mobile-nav-links">
+      <a href="#about" class="mobile-link">About Me</a>
+      <a href="#experience" class="mobile-link">Experience & Education</a>
+      <a href="#skills" class="mobile-link">Skills & Tools</a>
+      <a href="#projects" class="mobile-link">My Projects</a>
+      <a href="#volunteer" class="mobile-link">Volunteer Work</a>
+      <a href="#contact" class="mobile-link btn-contact-mob">Get In Touch</a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="badge-container">
+          <span class="badge"><i data-lucide="sparkles"></i> Open for Opportunities</span>
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">NurFatin Aina Rizal</span> 👋
+        </h1>
+        <h2 class="hero-subtitle">
+          I am a <span id="typing" class="type-text"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          Computer Science graduate specializing in <strong>Software Engineering</strong>. Passionate about building robust, modern, and user-centric web applications using React, Firebase, and full-stack technologies. Let's build something exceptional!
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            Hire Me <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nurfatinainarizal" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i data-lucide="linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-image-wrapper">
+        <div class="hero-image-container">
+          <!-- Fallback path if profile.png copy fails, we still have standard assets/images/profile.png -->
+          <img src="assets/images/profile.png" alt="NurFatin Aina Binti Rizal" class="profile-pic" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600'">
+          <div class="image-decoration decoration-1"></div>
+          <div class="image-decoration decoration-2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-section section-padding" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">🚀 My Journey</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-card glass">
+          <div class="card-icon-wrapper">
+            <i data-lucide="graduation-cap"></i>
+          </div>
+          <h3>Software Engineering Graduate</h3>
+          <p>
+            With a solid theoretical foundation and hands-on technical training from Multimedia University (MMU), I specialize in architecting responsive web frontends and reliable databases.
+          </p>
+        </div>
+
+        <div class="about-card glass">
+          <div class="card-icon-wrapper">
+            <i data-lucide="code-2"></i>
+          </div>
+          <h3>Full-Stack Mindset</h3>
+          <p>
+            I enjoy connecting intuitive user interfaces with robust backend APIs. My stack includes React, Firebase, PHP, and SQL, and I'm always eager to explore emerging web methodologies.
+          </p>
+        </div>
+
+        <div class="about-card glass">
+          <div class="card-icon-wrapper">
+            <i data-lucide="users"></i>
+          </div>
+          <h3>Team Player & Creator</h3>
+          <p>
+            From managing student portals to volunteer work, I believe in efficient communication, collaborative problem-solving, and continuous self-improvement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Section -->
+  <section class="experience-section section-padding" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Path</span>
+        <h2 class="section-title">💼 Experience & Education</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="timeline-container">
+        
+        <!-- Experience Column -->
+        <div class="timeline-column">
+          <h3 class="column-title"><i data-lucide="briefcase"></i> Work History</h3>
+          
+          <div class="timeline-wrapper">
+            
+            <div class="timeline-item glass">
+              <span class="timeline-date">Nov 2025 – Jan 2026</span>
+              <h4 class="timeline-role">Bartender & Cashier (Part Time)</h4>
+              <h5 class="timeline-company">Kasbin Putrajaya</h5>
+              <ul class="timeline-details">
+                <li>Handled customer orders and managed cash transactions efficiently.</li>
+                <li>Worked in a fast-paced environment while maintaining high service quality and active teamwork.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item glass">
+              <span class="timeline-date">Jul 2025 – Dec 2025</span>
+              <div class="item-badge">Apprenticeship</div>
+              <h4 class="timeline-role">Technology for Content Coordinator</h4>
+              <h5 class="timeline-company">Durioo Sdn. Bhd.</h5>
+              <ul class="timeline-details">
+                <li>Managed and uploaded digital content for the Durioo+ streaming platform using content management systems (CMS).</li>
+                <li>Utilized cutting-edge AI tools to generate multilingual subtitles and optimize media delivery.</li>
+                <li>Ensured content accuracy and improved overall publishing workflow efficiency.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item glass">
+              <span class="timeline-date">Oct 2023 – Jul 2024</span>
+              <h4 class="timeline-role">Assistant Photographer (Part Time)</h4>
+              <h5 class="timeline-company">Fiqstar Studio</h5>
+              <ul class="timeline-details">
+                <li>Captured premium behind-the-scenes content during professional photoshoots.</li>
+                <li>Assisted and coordinated key logistics to ensure smooth studio production and event coverage.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item glass">
+              <span class="timeline-date">Jun 2022 – Aug 2022</span>
+              <h4 class="timeline-role">Production Operator (Full Time)</h4>
+              <h5 class="timeline-company">Industrial Quality Management Sdn. Bhd. (IQM)</h5>
+              <ul class="timeline-details">
+                <li>Operated production machinery and supported manufacturing lines in high-intensity conditions.</li>
+                <li>Maintained flawless speed/efficiency metrics while adhering strictly to safety regulations.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Education & Certification Column -->
+        <div class="timeline-column">
+          <h3 class="column-title"><i data-lucide="graduation-cap"></i> Education & Certs</h3>
+          
+          <div class="timeline-wrapper">
+            
+            <div class="timeline-item education glass">
+              <span class="timeline-date">Oct 2022 – Oct 2025</span>
+              <div class="item-badge scholar">Scholar</div>
+              <h4 class="timeline-role">Bachelor of Computer Science (Hons.) in Software Engineering</h4>
+              <h5 class="timeline-company">Multimedia University (MMU), Cyberjaya</h5>
+              <p class="timeline-text">
+                Proud recipient of the prestigious <strong>Yayasan Universiti Multimedia (Ibnu Haitam) scholarship</strong>. Specialized in object-oriented paradigms, software architecture, database design, and web programming.
+              </p>
+            </div>
+
+            <div class="timeline-item education glass">
+              <span class="timeline-date">Oct 2020 – May 2022</span>
+              <h4 class="timeline-role">Matriculation Certificate in Science Physics</h4>
+              <h5 class="timeline-company">Matrikulasi Selangor, Banting</h5>
+              <p class="timeline-text">
+                Intensive training in analytical physics, calculus, and computing methodologies.
+              </p>
+            </div>
+
+            <div class="timeline-item certificate glass">
+              <span class="timeline-date">Oct 2025</span>
+              <div class="cert-icon"><i data-lucide="award"></i></div>
+              <h4 class="timeline-role">Huawei National ICT Competition</h4>
+              <h5 class="timeline-company">National Level Representative</h5>
+              <p class="timeline-text">
+                Demonstrated skills in cloud computing, infrastructure engineering, and collaborative problem-solving while competing with top academic students nationwide.
+              </p>
+            </div>
+
+            <div class="timeline-item certificate glass">
+              <span class="timeline-date">Dec 2024 – Dec 2026</span>
+              <div class="cert-icon"><i data-lucide="award"></i></div>
+              <h4 class="timeline-role">Huawei Cloud Service Computing Micro-Certification</h4>
+              <h5 class="timeline-company">Huawei Technologies</h5>
+              <p class="timeline-text">
+                Focused on essential cloud service principles, infrastructure hosting, serverless applications, and managing resources within Huawei Cloud environment.
+              </p>
+            </div>
+
+            <div class="timeline-item certificate glass">
+              <span class="timeline-date">Jan 2024</span>
+              <div class="cert-icon"><i data-lucide="award"></i></div>
+              <h4 class="timeline-role">Visual Communication Through Free Hand (Level 01)</h4>
+              <h5 class="timeline-company">Multimedia University</h5>
+              <p class="timeline-text">
+                Specialized training in architectural communication and translating conceptual designs through freehand drawing.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section section-padding" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Toolbox</span>
+        <h2 class="section-title">🛠 Technical Skills</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Core Languages Card -->
+        <div class="skills-card glass">
+          <h3 class="skills-card-title"><i data-lucide="code"></i> Programming Languages</h3>
+          <div class="skills-list">
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Java</span>
+                <span class="skill-percentage">Advanced</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>SQL / Database</span>
+                <span class="skill-percentage">Advanced</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width: 88%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML & CSS</span>
+                <span class="skill-percentage">Advanced</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width: 88%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>PHP</span>
+                <span class="skill-percentage">Advanced</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span class="skill-percentage">Intermediate</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>C++</span>
+                <span class="skill-percentage">Intermediate</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width: 72%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python</span>
+                <span class="skill-percentage">Basic</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" style="width: 45%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- IDEs, Tools & Platforms Card -->
+        <div class="skills-card glass">
+          <h3 class="skills-card-title"><i data-lucide="cpu"></i> IDEs, Tools & Platforms</h3>
+          
+          <div class="tools-grid">
+            <div class="tool-tag"><i data-lucide="layers" class="t-icon"></i> React</div>
+            <div class="tool-tag"><i data-lucide="database" class="t-icon"></i> Firebase</div>
+            <div class="tool-tag"><i data-lucide="terminal" class="t-icon"></i> VS Code</div>
+            <div class="tool-tag"><i data-lucide="github" class="t-icon"></i> GitHub & Git</div>
+            <div class="tool-tag"><i data-lucide="server" class="t-icon"></i> XAMPP</div>
+            <div class="tool-tag"><i data-lucide="box" class="t-icon"></i> IBM Db2</div>
+            <div class="tool-tag"><i data-lucide="smartphone" class="t-icon"></i> Android Studio</div>
+            <div class="tool-tag"><i data-lucide="binary" class="t-icon"></i> FreeMat</div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Spoken Languages -->
+          <h3 class="skills-card-title spoken-title"><i data-lucide="globe"></i> Spoken Languages</h3>
+          <div class="lang-grid">
+            <div class="lang-card">
+              <div class="lang-flag BM"></div>
+              <div class="lang-info">
+                <span class="lang-name">Bahasa Malaysia</span>
+                <span class="lang-level">Native Speaker</span>
+              </div>
+            </div>
+            <div class="lang-card">
+              <div class="lang-flag EN"></div>
+              <div class="lang-info">
+                <span class="lang-name">English</span>
+                <span class="lang-level">Intermediate</span>
+              </div>
+            </div>
+            <div class="lang-card">
+              <div class="lang-flag KO"></div>
+              <div class="lang-info">
+                <span class="lang-name">Korean</span>
+                <span class="lang-level">Beginner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section section-padding" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">💻 Feature Projects</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="project-grid">
+        
+        <!-- Project 1: Quizment System -->
+        <div class="project-card glass">
+          <div class="project-image-placeholder p-gradient-1">
+            <i data-lucide="help-circle"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="p-tag">React</span>
+              <span class="p-tag">Firebase</span>
+              <span class="p-tag">AI-Analytics</span>
+            </div>
+            <h3 class="project-title">Online Smart Quiz System</h3>
+            <p class="project-desc">
+              An AI-powered online quiz management platform. Designed and integrated structured dashboards with tiered user authorization roles:
+            </p>
+            <ul class="project-bullets">
+              <li><strong>Admin Role:</strong> System maintenance, platform-wide configuration.</li>
+              <li><strong>Instructor Role:</strong> Dynamic quiz authoring, auto-grading, analytical scoreboard.</li>
+              <li><strong>Student Role:</strong> Interactive test session, randomized question pools, progress tracking.</li>
+            </ul>
+            <div class="project-actions">
+              <span class="project-link"><i data-lucide="check-circle-2"></i> Full Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: MMU Hub -->
+        <div class="project-card glass">
+          <div class="project-image-placeholder p-gradient-2">
+            <i data-lucide="users-round"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="p-tag">PHP</span>
+              <span class="p-tag">MySQL</span>
+              <span class="p-tag">HTML/CSS</span>
+              <span class="p-tag">JS</span>
+            </div>
+            <h3 class="project-title">MMU Hub Portal</h3>
+            <p class="project-desc">
+              A responsive campus management web portal serving as a central communications hub for Multimedia University students. Highlights:
+            </p>
+            <ul class="project-bullets">
+              <li>Comprehensive custom user authorization system.</li>
+              <li>Interactive dashboard with real-time course resource sharing.</li>
+              <li>Community announcement bulletin board and administrative notices module.</li>
+            </ul>
+            <div class="project-actions">
+              <span class="project-link"><i data-lucide="check-circle-2"></i> Responsive Web</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Talabia Chess Game -->
+        <div class="project-card glass">
+          <div class="project-image-placeholder p-gradient-3">
+            <i data-lucide="swords"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="p-tag">Java</span>
+              <span class="p-tag">OOP</span>
+              <span class="p-tag">BlueJ</span>
+            </div>
+            <h3 class="project-title">Talabia Chess Game</h3>
+            <p class="project-desc">
+              A comprehensive standalone desktop chess simulator applying core Object-Oriented programming architectures. Highlights:
+            </p>
+            <ul class="project-bullets">
+              <li>Modular game design separating grid engine, player actions, and piece logic.</li>
+              <li>Full logic enforcement including move restrictions and turn state.</li>
+              <li>Designed using BlueJ workspace.</li>
+            </ul>
+            <div class="project-actions">
+              <span class="project-link"><i data-lucide="check-circle-2"></i> OOP Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Card Game GUI -->
+        <div class="project-card glass">
+          <div class="project-image-placeholder p-gradient-4">
+            <i data-lucide="playing-cards"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="p-tag">Java Swing</span>
+              <span class="p-tag">Event Handling</span>
+              <span class="p-tag">GUI Design</span>
+            </div>
+            <h3 class="project-title">GUI-Based Card Game</h3>
+            <p class="project-desc">
+              Interactive graphical desktop card game built in Java. Designed and integrated event-driven game states with advanced mouse listeners and clean asset drawing for dynamic gameplay.
+            </p>
+            <div class="project-actions">
+              <span class="project-link"><i data-lucide="check-circle-2"></i> GUI Development</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Alien Vs Zombie Game -->
+        <div class="project-card glass">
+          <div class="project-image-placeholder p-gradient-5">
+            <i data-lucide="gamepad-2"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="p-tag">C++ / Java</span>
+              <span class="p-tag">Logic Design</span>
+              <span class="p-tag">Console-Game</span>
+            </div>
+            <h3 class="project-title">Alien Vs Zombie</h3>
+            <p class="project-desc">
+              A highly engaging, console-based board-strategy game applying fundamentals of syntax structures and design loops. Promotes strategic character movement, attack algorithms, and grid coordinate mappings.
+            </p>
+            <div class="project-actions">
+              <span class="project-link"><i data-lucide="check-circle-2"></i> Logic Engine</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership & Volunteer Section -->
+  <section class="volunteer-section section-padding" id="volunteer">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Activities</span>
+        <h2 class="section-title">🌟 Leadership & Volunteer Work</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="activities-wrapper">
+        <div class="activities-card glass">
+          <div class="activities-icon"><i data-lucide="award"></i></div>
+          <h3 class="activities-card-title">Leadership Roles</h3>
+          <ul class="activities-list">
+            <li>
+              <div class="activity-header">
+                <strong>Committee Member (Logistics)</strong>
+                <span class="activity-year">2024</span>
+              </div>
+              <p>MMU Talent Showcase 2024 - Directed back-end logistics, venue coordination, and technical support.</p>
+            </li>
+            <li>
+              <div class="activity-header">
+                <strong>Assistant Treasurer</strong>
+                <span class="activity-year">2020 – 2022</span>
+              </div>
+              <p>Sekretariat Rukun Negara (Matrikulasi Selangor) - Maintained financial records, handled budgets, and supported civic events.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="activities-card glass">
+          <div class="activities-icon"><i data-lucide="heart"></i></div>
+          <h3 class="activities-card-title">Volunteer History</h3>
+          <div class="volunteer-badges">
+            <div class="volunteer-badge">
+              <i data-lucide="calendar"></i>
+              <span>MMU Open Day (June 2024)</span>
+            </div>
+            <div class="volunteer-badge">
+              <i data-lucide="cpu"></i>
+              <span>TM Future Skills Tech Titans Challenge (2023)</span>
+            </div>
+            <div class="volunteer-badge">
+              <i data-lucide="bird"></i>
+              <span>Volunteer at Pesta Sayap (2023)</span>
+            </div>
+            <div class="volunteer-badge">
+              <i data-lucide="tree-pine"></i>
+              <span>UMW Bamboo Tree Planting Programme (2022)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- References Section -->
+      <div class="references-container section-padding-top">
+        <div class="ref-header">
+          <h3 class="ref-title"><i data-lucide="quote"></i> Academic Reference</h3>
+        </div>
+        <div class="reference-card glass">
+          <div class="ref-quote-icon">"</div>
+          <p class="ref-text">
+            NurFatin is a highly motivated and hard-working Software Engineering graduate. Her scholarship at Multimedia University and leadership in various campus initiatives showcase her strong technical potential and professional reliability.
+          </p>
+          <div class="ref-author">
+            <div class="ref-author-details">
+              <h4>Mr. Lee Kian Chin</h4>
+              <p>Lecturer, Faculty of Computing and Informatics</p>
+              <p class="mmu-text">Multimedia University (MMU), Cyberjaya</p>
+            </div>
+            <div class="ref-contacts">
+              <a href="mailto:kclee@mmu.edu.my" class="ref-contact-link"><i data-lucide="mail"></i> kclee@mmu.edu.my</a>
+              <span class="ref-contact-link"><i data-lucide="phone"></i> +603-83125343</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section section-padding" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">📫 Get In Touch</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Info Card -->
+        <div class="contact-info-card glass">
+          <h3>Let's build something beautiful together!</h3>
+          <p>
+            I'm currently looking for new opportunities in Software Engineering and Web Development. If you have any questions, want to talk about a project, or just say hello, feel free to drop me a message!
+          </p>
+
+          <div class="info-list">
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <div class="info-content">
+                <span>Email Me</span>
+                <a href="mailto:fatinainarizal@gmail.com">fatinainarizal@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i data-lucide="phone"></i>
+              </div>
+              <div class="info-content">
+                <span>Phone Call</span>
+                <a href="tel:+60108427670">+6010-8427670</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div class="info-content">
+                <span>Location</span>
+                <p>Puchong, Selangor, Malaysia</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/nurfatinainarizal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="mailto:fatinainarizal@gmail.com" aria-label="Email">
+              <i data-lucide="mail"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card glass">
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="E.g. NurFatin Aina">
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required placeholder="name@domain.com">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" required placeholder="Project Inquiry / Job Opportunity">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" required placeholder="Hi Fatin, I would love to connect with you regarding..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+              Send Message <i data-lucide="send"></i>
+            </button>
+          </form>
+
+          <!-- Success Alert -->
+          <div id="form-success" class="form-success-alert glass hidden">
+            <i data-lucide="check-circle"></i>
+            <h4>Thank You!</h4>
+            <p>Your message has been sent successfully. I will get back to you as soon as possible! 😊</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 NurFatin Aina Binti Rizal. All rights reserved.</p>
+      <p class="footer-subtext">Designed with ❤️ & premium aesthetics.</p>
+    </div>
+  </footer>
+
+  <!-- Core Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>
