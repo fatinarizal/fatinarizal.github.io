@@ -161,32 +161,70 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- 5. Contact Form Submission Interaction --- */
   const contactForm = document.getElementById('contact-form');
   const formSuccess = document.getElementById('form-success');
+  const submitBtn = contactForm ? contactForm.querySelector('.btn-submit') : null;
 
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault(); // Prevent page refresh
 
-      // Capture values (can be used for analytics or logs)
+      // Animate button loading state
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Sending... <i data-lucide="loader" class="animate-spin"></i>';
+        if (typeof lucide !== 'undefined') {
+          lucide.createIcons();
+        }
+      }
+
+      // Capture values
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
       const subject = document.getElementById('subject').value;
       const message = document.getElementById('message').value;
 
-      console.log('Form submission received:', { name, email, subject, message });
-
-      // Animate form departure
-      contactForm.classList.add('hidden');
-      
-      // Delay visual entrance of success card
-      setTimeout(() => {
-        contactForm.style.display = 'none';
-        formSuccess.classList.remove('hidden');
+      // Submit via FormSubmit AJAX endpoint
+      fetch("https://formsubmit.co/ajax/fatinainarizal@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          _subject: `New Portfolio Message: ${subject}`,
+          message: message,
+          _captcha: "false"
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('FormSubmit Success:', data);
         
-        // Re-initialize Lucide check icon
-        if (typeof lucide !== 'undefined') {
-          lucide.createIcons();
+        // Animate form departure and show success card
+        contactForm.classList.add('hidden');
+        setTimeout(() => {
+          contactForm.style.display = 'none';
+          formSuccess.classList.remove('hidden');
+          
+          if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+          }
+        }, 300);
+      })
+      .catch(error => {
+        console.error('FormSubmit Error:', error);
+        
+        // Fallback alert warning
+        alert("Oops! There was an issue sending your message. Please try emailing directly at fatinainarizal@gmail.com.");
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = 'Send Message <i data-lucide="send"></i>';
+          if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+          }
         }
-      }, 300);
+      });
     });
   }
 });
